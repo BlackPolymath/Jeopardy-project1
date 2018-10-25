@@ -1,8 +1,11 @@
 @font-face {
+  src: url(/fonts/gyparodyhv.WOFF), url(fonts/gyparodyhv.WOFF) format("woff");
   font-family: "gyparody";
-  src: url(/fonts/gyparody\hv.ttf);
 }
-
+.jeopardy {
+  font-family: "gyparody";
+  font-size: 45px;
+}
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -12,27 +15,25 @@
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 0 0 32%;
   border: 4px solid black;
-  height: 170px;
+  height: 120px;
   width: 250px;
   cursor: pointer;
   cursor: hand;
+  text-align: center;
+  padding-top: 10px;
 }
-
-.left {
+.cat {
+  font-weight: 800;
 }
-
-.middle {
-}
-
-.right {
-}
-
 span {
   color: black;
   color: yellow;
-  font-family: "gyparody";
+  font-family: "Arial", sans-serif;
 }
 h3 {
   text-align: center;
