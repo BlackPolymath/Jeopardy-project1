@@ -23,10 +23,10 @@ var jeopardy = {
     qSix: ""
   },
 
-  attempts: 0,
   checkAnswer: function(question) {
-    console.log("in while loop");
-    while (this.attempts <= 2) {
+    let attempts = 0;
+    // console.log("in while loop");
+    while (attempts <= 2) {
       console.log("in while loop");
       this.answer = window.prompt(
         this.questions[question],
@@ -42,11 +42,12 @@ var jeopardy = {
         this.attempts++;
         alert("You are incorrect...try again");
         //return to text box
+        break;
       }
     }
   }
 };
-// only work on intial load, need to be looped. have to refresh between selection
+// only works on intial load, need to be looped. have to refresh between selection
 const qOne = document.getElementsByClassName("box qOne");
 console.log(qOne);
 qOne[0].addEventListener("click", function() {
