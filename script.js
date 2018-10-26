@@ -1,5 +1,3 @@
-console.log("hi");
-
 var jeopardy = {
   questions: {
     qOne:
