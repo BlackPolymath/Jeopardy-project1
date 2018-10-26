@@ -3,6 +3,8 @@
 Description
 This game is a play on the infamous Jeopardy trivia game. Users are able to select a dollar amount and answer the corresponding question in the traditional " who is.." "what is.." format. lower case and gramatically correct spacing will be accepted. This game is for the solitarie-type player looking to test their progressive political knowledge or learn something new. The game is not timed, users are given the opportunity to google answers they do not know. This game introduces lesser known facts and prominent figures that are not always recognized, and/or highlights the hyprocrisy of our current legislative system.
 
+![New Game Board](https://user-images.githubusercontent.com/43379089/47569851-baaf1b00-d902-11e8-9688-f6aff704532d.png)
+
 ## List of features/User Stories
 
 - Player can click on dollar amount in a category of their choice
@@ -11,6 +13,8 @@ This game is a play on the infamous Jeopardy trivia game. Users are able to sele
 - If user answers correctly, window prompt will confirm, user is redirected back to home page
 - If incorrect, window prompt will appear “Sorry, try again!”, user redirected to home page to select another question
 - User selects new question, repeat process
+
+![Answer Prompt](https://user-images.githubusercontent.com/43379089/47569882-cb5f9100-d902-11e8-9f85-a2f4bd3e56f3.png)
 
 ## Approach
 
