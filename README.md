@@ -22,15 +22,15 @@ This game is a play on the infamous Jeopardy trivia game. Users are able to sele
 
 ## New Game Board
 
-<img width="859" alt="new game board" src="https://user-images.githubusercontent.com/43379089/47569851-baaf1b00-d902-11e8-9688-f6aff704532d.png">
+[New Game Board](https://user-images.githubusercontent.com/43379089/47569851-baaf1b00-d902-11e8-9688-f6aff704532d.png)
 
 ## Answer Prompt
 
-<img width="847" alt="question deployed" src="https://user-images.githubusercontent.com/43379089/47569882-cb5f9100-d902-11e8-9f85-a2f4bd3e56f3.png">
+[Answer Prompt](src="https://user-images.githubusercontent.com/43379089/47569882-cb5f9100-d902-11e8-9f85-a2f4bd3e56f3.png)
 
 ## Correct Answer
 
-<img width="832" alt="correct answer" src="https://user-images.githubusercontent.com/43379089/47569923-d9151680-d902-11e8-8b41-bf4b8cfb094a.png">
+[Correct Answer](src="https://user-images.githubusercontent.com/43379089/47569923-d9151680-d902-11e8-8b41-bf4b8cfb094a.png)
 
 ## Tech Used
 
