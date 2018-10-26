@@ -11,7 +11,7 @@ var jeopardy = {
     qFour:
       "The 1994 crime bill, the catalyst for the mass incarceration of people of color was authored by this former Delaware senator.",
     qFive:
-      "The Anti-Drug Abuse Act of 1986 established mandatory prison sentences for low level drug offenses, disportionally targeting communities of color, is known by what pseudoym?. ",
+      "The Anti-Drug Abuse Act of 1986 established mandatory prison sentences for low level drug offenses, disproportionatlely targeting communities of color, is known by what pseudoym?. ",
     qSix:
       "This Amendment ratified in 1865, reestablished slavery as form of punishment, generating roughly $3.9 billion dollars a year in free prison labor from inmates. ",
     qSeven:
@@ -33,30 +33,35 @@ var jeopardy = {
     qEight: "who is justice oliver holmes",
     qNine: "what is plessy v. ferguson"
   },
-
   checkAnswer: function(question) {
-    let attempts = 0;
-    // console.log("in while loop");
+    //   when question is clicked checkAnswer method runs. checkAnswer method takes one para. that is a question
+    let attempts = 0; // attempts is used to track number of attempts, while loop allows max of 3 attempts
     while (attempts <= 2) {
+      // used this to define object variable answer and set equal to user input
       console.log("in while loop");
       this.answer = window.prompt(
-        this.questions[question],
-        "What is your answer"
+        // used this to define object variable answer and set equal to user input. window.prompt method to generate prompt for user input
+        this.questions[question], //   clicked question is displayed on prompt. questions is an object w/I object. brackets to access the question property in questions object
+        "Type your answer here"
       );
-      if (this.answers[question] === this.answer) {
-        this.success = true;
-        alert("YASSSS!");
-        //close alert box
-        break;
-      } else {
-        this.attempts++;
-        alert("That ain't it...try again!");
-        //return to text box
+      if (this.answer === null) {
+        //   cancel button returns null, so if this.answer is null, loop will break
         break;
       }
+      if (this.answers[question] === this.answer) {
+        // used this b/c object within current object. access question property in answers object
+        alert("YASSSS!");
+        break; // break used to break out of loop if user enters correct answer to go to next line, quest is complete
+      } else {
+        alert("That ain't it...try again!");
+      }
+      attempts++;
     }
   }
 };
+
+//  when question is clicked event listner is triggered. All call the same checkAnswer method in the jeopardy object
+// get elements returns a list, [0] neesd to be referenced as the first element in the list
 const qOne = document.getElementsByClassName("box qOne");
 console.log(qOne);
 qOne[0].addEventListener("click", function() {
